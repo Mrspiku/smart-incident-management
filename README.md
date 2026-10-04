@@ -1,2 +1,24 @@
-# smart-incident-management
-Full Stack Smart Incident Management Platform using React and ServiceNow
+# Smart Incident Management Platform
+
+## Overview
+
+A full stack ticketing system built using:
+
+- React
+- ServiceNow
+- Scripted REST APIs
+- Business Rules
+- Flow Designer
+
+## Features
+
+- Incident Creation
+- Incident Assignment
+- SLA Tracking
+- Duplicate Detection
+- Approval Workflow
+- Dashboards
+
+## Project Status
+
+Day 1 - Project Setup
