@@ -22,3 +22,5 @@ A full stack ticketing system built using:
 ## Project Status
 
 Day 1 - Project Setup
+Day 2 - Table Created and created some sample records
+
