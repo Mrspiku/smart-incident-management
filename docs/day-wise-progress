@@ -14,8 +14,6 @@ Completed
 
 ---
 
-## Day 2
-
 ## Day 2 ✅
 
 Completed:
@@ -34,4 +32,10 @@ Completed:
 Status:
 Completed
 
+## Day 3 ✅
+
+- Created IncidentUtils Script Include
+- Implemented reusable incident utility functions(for automatic priority calculation, auto assignment group, Generate Case number
+- Created Business Rule for automatic priority calculation
+- Tested incident creation workflow
   
