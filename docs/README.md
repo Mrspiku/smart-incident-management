@@ -7,5 +7,10 @@ Deliverables:Data Model Ready
 Day 3 Foundation-Create sample incidents and GlideRecord practice	
 Deliverables:Sample Data Ready
 
+Day 4 Foundation-Build IncidentUtils Script Include and Create Business Rules for priority calculate
+Deliverable:Reusable Logic Ready,Auto priority calculate
+
+
+
 
 
