@@ -39,3 +39,41 @@ Completed
 - Created Business Rule for automatic priority calculation
 - Tested incident creation workflow
   
+
+## Day 4 ✅
+
+Completed
+Created Scripted REST API container
+
+Name: Case API
+API ID: case_api
+Created API Resources
+
+GET /incidents
+
+Retrieve all incidents
+Query incident records using GlideRecord
+Return JSON response
+GET /incidents/{number}
+
+Retrieve a specific incident using incident number
+Implemented path parameter handling
+Added 404 error handling
+POST /incidents
+
+Create new incident records
+Read request payload using request.body.data
+Insert records using GlideRecord
+PATCH /incidents/{number}
+
+Partially update incident records
+Update only supplied fields
+Return success response
+
+Test APIs using Postman
+Validate GET, POST and PATCH operations
+Verify success and error responses
+
+
+Status:
+Completed
