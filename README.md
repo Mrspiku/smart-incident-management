@@ -25,5 +25,6 @@ Day 1 - Project Setup
 Day 2 - Table Created and created some sample records
 Day 3 - Build IncidentUtils Script Include,Create Business Rules for priority calculate
 Day 4 - Create Scripted REST APIs	API Endpoints Ready and Test APIs with Postman	
-
-
+Day 5 - Create React app and install dependencies
+Day 6 - Create Login, Home, Raise Ticket, My Tickets pages
+Day 7 - Build Raise Ticket form
