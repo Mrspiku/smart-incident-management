@@ -77,3 +77,68 @@ Verify success and error responses
 
 Status:
 Completed
+
+
+## Day 4 ✅
+
+Created React application using Vite
+Installed project dependencies
+axios
+react-router-dom
+react-icons
+Configured React project structure
+Created folders:
+pages
+components
+services
+utils
+hooks
+assets
+Verified React application running on localhost
+Updated App.jsx with Smart Incident Management application
+Deliverable: Frontend Setup Ready
+
+Status:
+Completed
+
+## Day 5 ✅
+
+Completed:
+
+Created Login page
+Created Home page
+Created Raise Ticket page
+Created My Tickets page
+Configured React Router
+Created navigation routes:
+/
+/home
+/create-ticket
+/my-tickets
+Created Navbar component
+Added navigation links between pages
+Verified page navigation
+Deliverable: Navigation Ready
+
+Status:
+Completed
+
+## Day 6 ✅
+Created Raise Ticket form UI
+Implemented React useState hooks
+Added fields:
+Short Description
+Description
+Category
+Impact
+Urgency
+Added Category dropdown options
+Added Impact dropdown options
+Added Urgency dropdown options
+Implemented form state management
+Created handleSubmit function
+Added basic validation
+Tested form submission through browser console
+Verified data capture from user inputs
+Deliverable: Ticket Form Ready
+
