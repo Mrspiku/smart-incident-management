@@ -142,3 +142,25 @@ Tested form submission through browser console
 Verified data capture from user inputs
 Deliverable: Ticket Form Ready
 
+
+## Day 8 ✅
+User
+  ↓
+React Form
+  ↓
+handleSubmit()
+  ↓
+Payload Creation
+  ↓
+Axios POST
+  ↓
+ServiceNow Scripted REST API
+  ↓
+Record Creation
+  ↓
+JSON Response
+  ↓
+Success Message
+
+Status:
+Completed
