@@ -205,3 +205,65 @@ Deliverable: Professional UI
 
 Status:
 Completed
+
+## Day 10 ✅
+
+//implementing assign to admin
+
+Created Assign Incident API
+Implemented PUT Resource
+Used Path Parameters
+Updated Assigned To Field
+Added React Assign Button
+Integrated Axios PUT Request
+Refreshed Incident List After Assignment
+
+//implementing worknotes
+Created Work Notes API
+Implemented PUT Resource
+Added Work Notes Text Area
+Added Save Work Notes Button
+Integrated Axios PUT Request
+Updated Incident Records
+Enabled Activity Tracking
+
+
+//implementing incident state
+Created Update State API
+Implemented PUT Resource
+Added State Dropdown
+Added Update State Button
+Integrated Axios PUT Request
+Updated Incident State
+Implemented Incident Lifecycle
+
+
+//implementing closure logic
+
+Added Resolution Notes Field
+Created Resolve Incident API
+Added Validation Logic
+Prevented Closure Without Notes
+Added Resolution Notes UI
+Implemented Resolve Button
+Updated Incident State To Resolved
+
+//End-to-End Testing
+
+Completed:
+
+Tested Ticket Creation
+Tested Ticket Listing
+Tested Ticket Details
+Tested Open Incidents
+Tested Assignment Flow
+Tested Work Notes
+Tested State Management
+Tested Resolution Validation
+Verified User/Admin Journey
+
+
+Status:
+Completed
+
+
