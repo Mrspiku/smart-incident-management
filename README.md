@@ -30,7 +30,15 @@ Day 6 - Create Login, Home, Raise Ticket, My Tickets pages
 Day 7 - Build Raise Ticket form
 Day 8 - Connect React to ServiceNow API
 Day 9 - Connected Get API to display the ticket details
-Day10 - UI Cleanup and Styling
+Day10 - UI Cleanup and Styling Create Open Incidents module
+Assign To Me UI Action
+Implement Work Notes
+Implement State Management
+Resolution Notes Validation
+End-to-End Testing
+Bug Fixes
+
+
 
 
 
