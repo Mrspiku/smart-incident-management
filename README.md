@@ -29,5 +29,6 @@ Day 5 - Create React app and install dependencies
 Day 6 - Create Login, Home, Raise Ticket, My Tickets pages
 Day 7 - Build Raise Ticket form
 Day 8 - Connect React to ServiceNow API
+Day 9 - Connected Get API to display the ticket details
 
 
