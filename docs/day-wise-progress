@@ -267,3 +267,26 @@ Status:
 Completed
 
 
+## Day 11✅
+
+Created Knowledge Article table
+Added sample KB articles
+Built Scripted REST API for KB suggestions
+Queried knowledge articles using category
+Integrated React frontend with KB API
+Displayed recommended articles dynamically
+
+//automation testing
+Tested Ticket Creation Flow
+Tested My Tickets Page
+Tested Open Incidents Module
+Tested Assign To Me Functionality
+Tested Work Notes Updates
+Tested State Management
+Tested Resolution Validation
+Tested Team Routing
+Tested Knowledge Recommendation Feature
+
+
+Status:
+Completed
