@@ -290,3 +290,292 @@ Tested Knowledge Recommendation Feature
 
 Status:
 Completed
+
+
+## Day 12✅
+
+#### Objective
+Create the data model required to track SLA performance for CASE records.
+- Created a custom SLA table
+- Added an auto-generated SLA number
+- Added a reference field linking the SLA to a CASE
+- Added Priority field
+- Added Target Hours field
+- Added Start Time field
+- Added Due Time field
+- Added Status field
+- Added Breached true/false field
+- Added SLA fields to the form and list layout
+- Verified the table structure using sample data
+
+#### Objective
+Define target resolution times based on CASE priority.
+
+#### Work Completed
+- Defined priority-based SLA rules
+- Created reusable SLA calculation logic
+- Configured target hours for each priority
+- Added due-time calculation logic
+- Tested target-hour calculations
+
+#### SLA Rules
+
+- P1-Critical: 4 hours
+- P2-High: 8 hours
+- P3-Moderate: 24 hours
+- P4-Low: 48 hours
+
+#### Objective
+Automatically create an SLA record whenever a new CASE is created.
+
+#### Work Completed
+- Created an after-insert Business Rule on the CASE table
+- Automatically created SLA records for new CASE records
+- Linked the SLA record to its related CASE
+- Copied CASE priority into the SLA record
+- Populated target hours based on priority
+- Populated SLA start time
+- Calculated and populated SLA due time
+- Set the initial SLA status to In Progress
+- Set the initial Breached value to false
+- Fixed CASE reference-field mapping
+- Corrected priority-to-target-hour mapping
+
+#### Automation Flow
+
+CASE Created  
+→ Business Rule Executes  
+→ SLA Record Created  
+→ Priority Rule Applied  
+→ Due Time Calculated  
+→ SLA Monitoring Started
+
+#### Deliverable
+SLA Automation Ready ✅
+
+#### Objective
+Monitor active SLA records and identify overdue SLAs.
+
+#### Work Completed
+- Created SLA monitoring logic
+- Queried In Progress SLA records
+- Compared the current date and time with the SLA due time
+- Converted SLA Due Time into a GlideDateTime before comparison
+- Automatically changed overdue SLA records to Breached
+- Automatically set the Breached field to true
+- Tested the monitoring script using past due dates
+- Verified that overdue SLA records update correctly
+
+#### Monitoring Flow
+
+Scheduled SLA Check  
+→ Find In Progress SLAs  
+→ Compare Current Time with Due Time  
+→ Mark Overdue SLA as Breached  
+→ Set Breached to True
+
+#### Objective
+Track whether an SLA was met or breached based on CASE resolution and SLA due time.
+
+#### Work Completed
+- Implemented SLA compliance-status logic
+- Created logic to update the SLA when a CASE is resolved
+- Automatically changed SLA Status to Met
+- Automatically changed Breached to false for met SLAs
+- Retained Breached status for overdue SLA records
+- Linked SLA compliance with CASE lifecycle updates
+- Tested Met and Breached scenarios
+
+#### Compliance Flow
+
+SLA In Progress  
+→ CASE Resolved Within Target  
+→ SLA Status = Met  
+→ Breached = False
+
+OR
+
+SLA In Progress  
+→ Due Time Exceeded  
+→ SLA Status = Breached  
+→ Breached = True
+
+#### Objective
+Test the complete SLA Engine from CASE creation through compliance tracking.
+
+#### Work Completed
+- Tested automatic SLA record creation
+- Tested CASE-to-SLA reference mapping
+- Tested P1 target hours
+- Tested P2 target hours
+- Tested P3 target hours
+- Tested P4 target hours
+- Tested start-time population
+- Tested due-time calculation
+- Tested scheduled SLA monitoring
+- Tested breach detection
+- Tested Met status after CASE resolution
+- Verified the Breached true/false field
+- Completed end-to-end SLA testing
+
+#### Test Results
+
+- SLA Auto Creation: PASS ✅
+- CASE Reference Mapping: PASS ✅
+- Priority Rules: PASS ✅
+- Due-Time Calculation: PASS ✅
+- Breach Detection: PASS ✅
+- Met Status Logic: PASS ✅
+- Compliance Tracking: PASS ✅
+
+Status:
+Completed
+
+## Day 13✅
+
+# Emails and Approvals
+
+#### Objective
+Generate an email notification whenever a new CASE is created.
+
+#### Work Completed
+- Created an Incident Created email notification
+- Configured the notification on the CASE table
+- Configured the record-insert trigger
+- Added dynamic CASE information to the subject and email body
+- Configured a valid test recipient
+- Tested email generation
+- Verified the generated email in the outbound email records
+- Identified that Created By resolved to the Guest user
+- Used a configured user for reliable PDI notification testing
+
+#### Notification Flow
+
+CASE Created  
+→ Notification Triggered  
+→ Email Generated  
+→ CASE Details Included
+
+#### Objective
+Notify the assignee whenever a CASE is assigned.
+
+#### Work Completed
+- Created an Incident Assigned email notification
+- Configured the notification on the CASE table
+- Triggered the notification when Assigned To changes
+- Added CASE number, description, priority, assignee, and state
+- Tested assignment through the React frontend
+- Verified that the assignment notification is generated
+
+#### Notification Flow
+
+CASE Assigned  
+→ Assigned To Changes  
+→ Assignment Notification Triggered  
+→ Email Generated
+
+#### Objective
+Generate an email notification whenever a CASE moves to the Resolved state.
+
+#### Work Completed
+- Created an Incident Resolved email notification
+- Configured the notification for CASE updates
+- Added an advanced condition for the Resolved state
+- Added CASE number, description, priority, state, and resolution details
+- Tested resolution from the ServiceNow backend
+- Tested resolution from the React frontend
+- Fixed the notification trigger for API-based updates
+- Verified that resolution emails are generated correctly
+
+#### Notification Flow
+
+CASE State Changed to Resolved  
+→ Advanced Condition Evaluated  
+→ Resolution Notification Triggered  
+→ Email Generated
+
+#### Objective
+Create the base Flow Designer process for P1-Critical CASE approvals.
+
+#### Work Completed
+- Created a CASE Approval Flow in Flow Designer
+- Configured a CASE record-created trigger
+- Added the P1-Critical priority condition
+- Added flow logging for testing
+- Added the Ask For Approval action
+- Configured a test approver
+- Activated the approval flow
+- Tested the flow using a P1-Critical CASE
+- Verified creation of the approval request
+- Verified that the flow waits for an approval decision
+
+#### Approval Flow
+
+P1-Critical CASE Created  
+→ Approval Flow Triggered  
+→ Approval Request Created  
+→ Waiting for Approver
+
+#### Objective
+Allow a manager or configured approver to approve or reject a P1-Critical CASE.
+
+#### Work Completed
+- Configured manager approval logic
+- Configured approval and rejection outcomes
+- Created approval records for P1-Critical CASE records
+- Added CASE-level approval controls
+- Connected CASE approval actions to the related approval record
+- Allowed approval decisions from the CASE form
+- Updated the underlying approval request
+- Configured the approved flow branch
+- Configured the rejected flow branch
+- Updated CASE Approval Status after a decision
+- Moved approved CASE records to In Progress
+- Moved rejected CASE records to On Hold
+- Verified that the flow changes from Waiting to Completed
+- Tested both approval and rejection scenarios
+
+#### Approval Workflow
+
+P1-Critical CASE Created  
+→ Approval Requested  
+→ Approver Selects Approve or Reject  
+→ Approval Record Updated  
+→ Flow Continues  
+→ CASE Status Updated  
+→ Flow Completed
+
+#### Objective
+Verify the complete notification and approval workflow.
+
+#### Work Completed
+- Tested Incident Created notification
+- Tested Assignment notification
+- Tested Resolution notification
+- Tested notifications generated from React API updates
+- Tested P1-Critical approval-flow trigger
+- Verified creation of approval records
+- Tested approval from the CASE form
+- Tested rejection from the CASE form
+- Verified the Approved flow path
+- Verified the Rejected flow path
+- Verified CASE state changes
+- Verified CASE Approval Status changes
+- Verified that Flow Designer executions complete successfully
+
+#### Test Results
+
+- Incident Created Email: PASS ✅
+- Assignment Email: PASS ✅
+- Resolution Email: PASS ✅
+- P1 Approval Trigger: PASS ✅
+- Approval Request Creation: PASS ✅
+- CASE Approval Action: PASS ✅
+- CASE Rejection Action: PASS ✅
+- Approved State Update: PASS ✅
+- Rejected State Update: PASS ✅
+- Flow Completion: PASS ✅
+
+
+Status:
+Completed
