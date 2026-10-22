@@ -594,4 +594,26 @@ Prepared integration foundation for Jira and Azure DevOps
 Status:
 Completed
 
+#Day 15 ✅
+
+Created an outbound REST Message
+Configured a GET HTTP method
+Tested an external API endpoint
+Executed RESTMessageV2 from a server-side script
+Retrieved the HTTP status code
+Retrieved the response body
+Parsed a JSON response
+Added basic exception handling
+Documented common HTTP response codes
+Prepared the integration foundation for Jira and Azure DevOps
+Created Azure DevOps REST Message
+Configured POST HTTP Method
+Added JSON Request Body
+Created AzureDevOpsIntegrationUtils Script Include
+Executed outbound RESTMessageV2 requests
+Connected CASE creation to ADO synchronization
+Tested integration response
+
+Status:
+Completed
 
