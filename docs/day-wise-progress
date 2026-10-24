@@ -648,3 +648,17 @@ Validated end-to-end integration flow
 
 Status:
 Completed
+
+#Day 17 ✅
+Created SCM User Role
+Implemented Read ACL
+Implemented Write ACL
+Implemented Create ACL
+Restricted access to owned records
+Tested user access
+Tested admin access
+Did performance testing using improved codes
+
+
+Status:
+Completed
